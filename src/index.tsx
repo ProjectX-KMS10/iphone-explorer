@@ -1,3 +1,4 @@
+import Header from "Atoms/Header";
 import Footer from "Atoms/ Footer";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <App />
+    <Header />
     <Footer />
   </React.StrictMode>
 );
