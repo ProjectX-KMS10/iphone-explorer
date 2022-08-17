@@ -1,10 +1,15 @@
-import { useNavigate } from "react-router-dom";
+import { listData } from "data/data"
 
-export const TopPage = (()=>{
-  const navigate = useNavigate();
-  return(
-  <div>
-    <button onClick={()=>navigate({ pathname: "/signin" })}>ボタン</button>
-  </div>
+export const TopPage = (() => {
+  return (
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      {listData.map((data, index) => {
+        return (
+          <div style={{ width: "25%" }}>
+            <div className="rainbow" key={index}>{data.name}</div>
+          </div>
+        )
+      })}
+    </div>
   )
 })
