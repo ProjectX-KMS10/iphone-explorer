@@ -24,6 +24,28 @@
   color: white;
 }
 
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  color: #fff;
+  width: 350px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: animate 8s linear infinite;
+  filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
