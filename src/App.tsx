@@ -1,8 +1,9 @@
-import React from 'react';
+import Footer from "Atoms/ Footer";
+import React from "react";
 
-import './App.css';
-import { RouterList } from './Route/RouterList';
+import "./App.css";
+import { RouterList } from "./Route/RouterList";
 
-export const App = (()=>{
-  return <RouterList />
-})
+export const App = () => {
+  return <RouterList />;
+};
