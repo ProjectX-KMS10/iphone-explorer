@@ -2,7 +2,7 @@ import { listData } from "data/data"
 
 export const TopPage = (() => {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", flexWrap: "wrap", paddingTop: "140px" }}>
       {listData.map((data, index) => {
         return (
           <div style={{ width: "25%" }}>
