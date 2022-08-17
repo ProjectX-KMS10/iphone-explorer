@@ -5,7 +5,7 @@ const Footer = () => {
         bottom: 0,
         left: 0,
         position: "absolute",
-        backgroundColor: "red",
+        backgroundColor: "black",
         width: "100vw",
       }}
     >
@@ -32,6 +32,7 @@ const Footer = () => {
         <div
           style={{
             borderTop: "thick double black",
+            borderColor: "white",
           }}
         >
           <p
@@ -39,6 +40,7 @@ const Footer = () => {
               fontWeight: "bold",
               fontSize: "20px",
               textAlign: "center",
+              color: "white",
             }}
           >
             ©️ ProjectX, Inc. All rights reserved.
