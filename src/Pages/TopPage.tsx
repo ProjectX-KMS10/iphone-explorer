@@ -1,3 +1,5 @@
+import { Pic } from "Atoms/Pic"
+import { Title } from "Atoms/Title"
 import { listData } from "data/data"
 
 export const TopPage = (() => {
@@ -6,7 +8,10 @@ export const TopPage = (() => {
       {listData.map((data, index) => {
         return (
           <div style={{ width: "25%" }}>
-            <div className="rainbow" key={index}>{data.name}</div>
+            <div className="rainbow" key={index} style={{ display: "flex" }}>
+              <Pic picture={data.url} />
+              <Title title={data.name} />
+            </div>
           </div>
         )
       })}
