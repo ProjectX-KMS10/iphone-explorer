@@ -1,4 +1,3 @@
-import Footer from "Atoms/ Footer";
 import React from "react";
 
 import "./App.css";

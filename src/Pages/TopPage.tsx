@@ -1,6 +1,7 @@
 import { Pic } from "Atoms/Pic"
 import { Title } from "Atoms/Title"
 import { listData } from "data/data"
+import { Link } from "react-router-dom"
 
 export const TopPage = (() => {
   return (
@@ -8,10 +9,12 @@ export const TopPage = (() => {
       {listData.map((data, index) => {
         return (
           <div style={{ width: "25%" }}>
-            <div className="rainbow" key={index} style={{ display: "flex" }}>
-              <Pic picture={data.url} />
-              <Title title={data.name} />
-            </div>
+            <Link to={`${data.id}`}>
+              <div className="rainbow" key={index} style={{ display: "flex" }}>
+                <Pic picture={data.url} />
+                <Title title={data.name} />
+              </div>
+            </Link>
           </div>
         )
       })}
