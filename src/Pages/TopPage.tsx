@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 export const TopPage = (() => {
   return (
-    <div style={{ display: "flex", flexWrap: "wrap", paddingTop: "140px" }}>
+    <div style={{ display: "flex", flexWrap: "wrap"}}>
       {listData.map((data, index) => {
         return (
           <div style={{ width: "25%" }}>

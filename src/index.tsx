@@ -12,8 +12,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Header />
-    <div style={{ paddingTop: "40px" }}>
-      <App />
+    <div style={{paddingTop:"220px"}}>
+    <App />
     </div>
     <Footer />
   </React.StrictMode>
