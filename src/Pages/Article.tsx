@@ -6,11 +6,15 @@ export const Article = (() => {
   const fil = listData.filter((data) => {
     return data.id === Number(articleId)
   })
-  console.log(fil, "fil")
 
   return (
-    <div style={{ backgroundColor: "red", height: "400px" }}>
-      <p style={{ display: "block", position: "absolute", color: "blue", top: "50%", left: "50%" }}>{fil[0].title}</p>
+    <div style={{ backgroundColor: "red" }}>
+      <div>
+        <p style={{ display: "block", fontWeight: "bold", fontSize: "40px" }}>{fil[0].title}</p>
+      </div>
+      <div style={{ backgroundColor: "blue" }}>
+        <p style={{ display: "block" }}>{fil[0].content}</p>
+      </div>
     </div>
   )
 })

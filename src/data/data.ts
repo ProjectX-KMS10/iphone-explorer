@@ -3,7 +3,8 @@ export const listData = [
     id: 1,
     name: "iphoneユーザ７割が知らない長押し術",
     url: "https://source.unsplash.com/reNVIeIHdo8",
-    title: "test"
+    title: "iphoneユーザ７割が知らない長押し術",
+    content: "こんな感じです！"
   },
   {
     id: 2,
